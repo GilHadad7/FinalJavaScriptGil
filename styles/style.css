@@ -1,7 +1,7 @@
 /* Reset basic styling */
 @font-face {
   font-family: Rubik;
-  src: url("/fonts/RubikVinyl-Regular.ttf");
+  src: url("./fonts/RubikVinyl-Regular.ttf");
 }
 
 * {
