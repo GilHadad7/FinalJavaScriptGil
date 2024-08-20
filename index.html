@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ספר טלפונים</title>
+  <link rel="stylesheet" href="/styles/style.css">
+  <script src="/js/JavaScript.js"> </script>
+</head>
+
+<body>
+  <header>
+    <h1>ספר טלפונים</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">בית</a></li>
+        <li><a href="#contacts">כניסה</a></li>
+        <li><a href="#about">הרשמה</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div>
+      <div class="center">
+        <input type="text" id="search" placeholder="חפש איש קשר...">
+        <button id="addContactBtn">הוסף איש קשר</button>
+        <button id="deleteAllBtn">נקה כל הרשומות</button>
+      </div>
+      <ul id="contactList"></ul>
+    </div>
+    <div id="popupForm" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form id="contactForm">
+          <input type="hidden" id="contactId">
+          <label for="name">שם:</label>
+          <input type="text" id="name" required>
+          <label for="phone">טלפון:</label>
+          <input type="text" id="phone" required>
+          <label for="address">כתובת:</label>
+          <input type="text" id="address">
+          <label for="email">אימייל:</label>
+          <input type="email" id="email">
+          <label for="notes">הערות:</label>
+          <textarea id="notes"></textarea>
+          <button type="submit" class="saveBtn">שמור</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>גיל חדד && רועי מזרחי 49.1</footer>
+</body>
+
+</html>
